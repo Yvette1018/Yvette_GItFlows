@@ -1,14 +1,102 @@
 <!DOCTYPE html>
-<html lang="en">
+<html lang="zh-CN">
 
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Document</title>
+    <title>My profile</title>
+    <style>
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: "Microsoft YaHei", sans-serif;
+        }
+
+        body {
+            background-color: #f0f2f5;
+            display: flex;
+            justify-content: center;
+            align-items: center;
+            min-height: 100vh;
+            padding: 20px;
+        }
+
+        .card {
+            background-color: white;
+            border-radius: 12px;
+            box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+            padding: 30px;
+            width: 400px;
+        }
+
+        .card h1 {
+            text-align: center;
+            color: #333;
+            margin-bottom: 25px;
+            font-size: 24px;
+        }
+
+        table {
+            width: 100%;
+            border-collapse: collapse;
+        }
+
+        table tr {
+            border-bottom: 1px solid #eee;
+        }
+
+        table tr:last-child {
+            border-bottom: none;
+        }
+
+        table td {
+            padding: 12px 8px;
+            font-size: 16px;
+        }
+
+        table td:first-child {
+            color: #666;
+            font-weight: 500;
+            width: 35%;
+        }
+
+        table td:last-child {
+            color: #333;
+        }
+    </style>
 </head>
 
 <body>
-    <h1>Hello, I'm Yvette!</h1>
+    <div class="card">
+        <h1>👋 My profile</h1>
+        <table>
+            <tr>
+                <td>Name</td>
+                <td>Yvette</td>
+            </tr>
+            <tr>
+                <td>StudentId</td>
+                <td>20242171</td>
+            </tr>
+            <tr>
+                <td>age</td>
+                <td>20</td>
+            </tr>
+            <tr>
+                <td>sex</td>
+                <td>female</td>
+            </tr>
+            <tr>
+                <td>major</td>
+                <td>software engineering</td>
+            </tr>
+            <tr>
+                <td>grade</td>
+                <td>sophomore year</td>
+            </tr>
+        </table>
+    </div>
 </body>
 
 </html>
